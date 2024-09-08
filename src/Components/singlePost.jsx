@@ -6,8 +6,11 @@ const SinglePost = () => {
 
   const fetchData = async () => {
     try {
-      const response = await fetch(`${baseapi}/post/all-posts`);
-      const fullresponse = response.json();
+      const response = await fetch(
+        `https://blog-api-ccdx.onrender.com/post/all-posts`
+      );
+      const fullresponse = await response.json();
+      console.log("this is the code =>", fullresponse);
       return fullresponse;
     } catch (error) {
       console.log(error);
@@ -15,14 +18,14 @@ const SinglePost = () => {
   };
 
   useEffect(() => {
-    fetchData()
-      .then((miles) => {
-        console.log("the posts => ", miles);
-        setPostData(miles.posts);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    fetchData();
+    // .then((miles) => {
+    //   console.log("the posts => ", miles);
+    //   setPostData(miles.posts);
+    // })
+    // .catch((error) => {
+    //   console.log(error);
+    // });
   }, []);
   return (
     <div>
