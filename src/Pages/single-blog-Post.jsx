@@ -11,6 +11,7 @@ const SingleBlogPost = ({ cohort2post }) => {
 
   return (
     <div>
+      <h1>It is exciting to be here again!!!!!</h1>
       <div className="border border-gray-300  drop-shadow-md rounded-md p-3 h-full overflow-hidden">
         <img src={cohort2post?.post_image} alt="img" />
         <h5 className="text-blue-500">{cohort2post?.title}</h5>
