@@ -20,14 +20,14 @@ const SinglePost = () => {
   };
 
   useEffect(() => {
-    fetchData();
-    // .then((miles) => {
-    //   console.log("the posts => ", miles);
-    //   setPostData(miles.posts);
-    // })
-    // .catch((error) => {
-    //   console.log(error);
-    // });
+    fetchData()
+      .then((miles) => {
+        console.log("the posts => ", miles);
+        setPostData(miles.posts);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
   return (
     <div>
