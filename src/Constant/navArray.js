@@ -9,11 +9,11 @@ export const navigationArray = [
     link: "/blog",
     label: "Blog",
   },
-  {
-    id: 3,
-    link: "/singlePost",
-    label: "SinglePost",
-  },
+  // {
+  //   id: 3,
+  //   link: "/singlePost",
+  //   label: "SinglePost",
+  // },
   {
     id: 4,
     link: "/pages",

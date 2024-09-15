@@ -33,8 +33,6 @@ const SinglePost = () => {
     <div>
       <div>
         <h4 className="font-bold mb-5">Latest Posts</h4>
-        <h2>This must be the  blog section!!!!</h2>
-        <h1>And this is the {baseapi}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {postData.slice(0, 9).map((post) => (
             <SingleBlogPost key={post.id} cohort2post={post} />
